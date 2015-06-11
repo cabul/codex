@@ -3,8 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Codex</title>
+    <style>
+      document, body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      canvas {
+        background: black;
+      }
+    </style>
   </head>
   <body>
-    
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <script>require('./app.js')</script>
   </body>
 </html>
