@@ -1,11 +1,10 @@
 const BrowserWindow = require('browser-window');
-const crashReporter = require('crash-reporter');
 const app = require('app');
 const path = require('path');
 
 var mainWindow = null;
 
-crashReporter.start();
+require('crash-reporter')();
 
 app.on('windows-all-closed', function() {
   if (process.platform !== 'darwin') {
